@@ -15,7 +15,7 @@
 //!
 //! Eight machines share this chip, so these are eight machines' sprites.
 
-use ti_tms9918::{PALETTE, Tms9918, VdpRegion};
+use emu198x_ti_tms9918::{PALETTE, Tms9918, VdpRegion};
 
 const SAT: u16 = 0x1000;
 const SPG: u16 = 0x1800;

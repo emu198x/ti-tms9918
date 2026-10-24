@@ -22,7 +22,7 @@
 //! caveat: the *positions* are convention, the *rules* below are the manual's
 //! own words.
 
-use ti_tms9918::{PALETTE, Tms9918, VdpRegion};
+use emu198x_ti_tms9918::{PALETTE, Tms9918, VdpRegion};
 
 const SAT: u16 = 0x1000;
 const SPRITE_PATTERNS: u16 = 0x1800;

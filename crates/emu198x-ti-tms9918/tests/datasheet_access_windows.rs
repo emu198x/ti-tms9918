@@ -21,7 +21,7 @@
 //! see the comment in its `VDP::scheduleCpuVramAccess`), exactly as openMSX's
 //! own model is — `CPU_ACCESS_DELAY_DOTS` in the crate says why.
 
-use ti_tms9918::{Tms9918, VdpRegion};
+use emu198x_ti_tms9918::{Tms9918, VdpRegion};
 
 /// Dots in a scan line.
 const DOTS_PER_LINE: usize = 342;

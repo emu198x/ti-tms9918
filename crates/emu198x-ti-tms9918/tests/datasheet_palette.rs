@@ -22,7 +22,7 @@
 //! the byte, which is itself the evidence that they are the ones it was built
 //! with.
 
-use ti_tms9918::PALETTE;
+use emu198x_ti_tms9918::PALETTE;
 
 /// `(Y, R-Y, B-Y)` per Table 2-3, TMS9928A/9929A columns, index 1-15.
 /// Index 0 is transparent and has no entry.
@@ -170,7 +170,7 @@ fn the_palette_is_the_component_variant() {
 /// separately. Hence a test on the outcome rather than on either step.
 #[test]
 fn an_uncovered_transparent_pixel_is_black() {
-    use ti_tms9918::{Tms9918, VdpRegion};
+    use emu198x_ti_tms9918::{Tms9918, VdpRegion};
 
     let mut vdp = Tms9918::new(VdpRegion::Ntsc);
     // Graphics I, display enabled: R1 bit 6 turns the screen on.
